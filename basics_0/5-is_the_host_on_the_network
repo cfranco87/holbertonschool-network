@@ -2,3 +2,18 @@
 """
 The Internet Control Message Protocol (ICMP) is a protocol 
 """
+#!/bin/bash
+if [ "$#" -ne 1 ]; then
+  echo "Usage: $0 {IP_ADDRESS}"
+  exit 1
+fi
+
+IP_ADDRESS="$1"
+
+ping -c 5 "$IP_ADDRESS"
+
+if [ $? -eq 0 ]; then
+  echo "$IP_ADDRESS is reachable on the network."
+else
+  echo "$IP_ADDRESS is not reachable on the network."
+fi
