@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+"""
+Bash script shows listening port 
+"""
+
+
+netstat -tunlp | grep :22
