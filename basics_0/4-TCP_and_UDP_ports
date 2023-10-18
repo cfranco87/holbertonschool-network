@@ -2,9 +2,5 @@
 """
 Bash script shows listening port 
 """
-if [ "$EUID" -ne 0 ]; then
-  echo "Please run this script as root (with sudo)."
-  exit 1
-fi
-
-sudo netstat -tunlp
+echo "Listening Ports:"
+netstat -tuln -p
