@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-"""
-Bash script shows listening port 
-"""
+"""Bash script shows listening port"""
 echo "Listening Ports:"
 netstat -tuln -p
