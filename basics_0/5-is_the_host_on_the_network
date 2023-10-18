@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-"""
-The Internet Control Message Protocol (ICMP) is a protocol
-"""
+"""The Internet Control Message Protocol (ICMP) is a protocol"""
 if [ "$#" -ne 1 ]; then
   echo "Usage: $0 {IP_ADDRESS}"
   exit 1
